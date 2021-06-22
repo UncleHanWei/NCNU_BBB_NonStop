@@ -1,0 +1,19 @@
+{
+   "name": "NCNU BBB NonStop",
+   "version": "1.0",
+   "description": "Let students can hang on the remote class and go back to sleep again.",
+   "permissions": [],
+   "background": {
+      "scripts": [
+         "background.js"
+      ]
+   },
+   "content_scripts": [
+      {
+         "matches": ["https://*.ncnu.edu.tw/*"],
+         "js": ["auto_confirm.js"]
+      }
+   ],
+   "browser_action": {},
+   "manifest_version": 2
+}
